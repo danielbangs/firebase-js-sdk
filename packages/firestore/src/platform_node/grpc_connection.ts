@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-import * as grpc from 'grpc';
+import * as grpc from '@grpc/grpc-js';
 
 import firebase from '@firebase/app';
 const SDK_VERSION = firebase.SDK_VERSION;
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const grpcVersion = require('grpc/package.json').version;
+const grpcVersion = require('@grpc/grpc-js/package.json').version;
 
 import { Token } from '../api/credentials';
 import { DatabaseInfo } from '../core/database_info';
